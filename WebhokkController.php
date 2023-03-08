@@ -113,7 +113,7 @@ class WebHookController extends BaseController
         if($query->rowCount()===0){
             $sql = 'INSERT INTO users (id, ads_id, ref_user) VALUES (:id, :ads_id, :ref_user)';
             //send data to Telegram chanel
-            $url = 'https://api.telegram.org/bot6136935003:AAELCf6tHB2IhYjVjGFnxkUfHO87BLqIrqU/sendMessage?chat_id=-1001857698694&text='.$user_id.'%20-%20ad_id='.$ads_id.'%20-%20user_ref='.$ref_user;
+            $url = 'https://api.telegram.org/КЕЕЕЕ/sendMessage?chat_id=-1001857698694&text='.$user_id.'%20-%20ad_id='.$ads_id.'%20-%20user_ref='.$ref_user;
             $curl = curl_init();
             curl_setopt_array($curl, array(
                 CURLOPT_URL => $url,
@@ -343,7 +343,7 @@ class WebHookController extends BaseController
             $sql = 'INSERT INTO users (id, username, last_message_id) VALUES (:id, :username, :last_message_id)';
             $message_text = "Привіт, вітаємо у світі Pimble! Наш тест допоможе більше дізнатись про свої сильні та слабкі сторони. Для максимально точного результату, ми додали багато коротких запитань з варіантами відповідей, тому проходження тесту не займає більше 3хв";
             //send data to Telegram chanel
-            $url = 'https://api.telegram.org/bot6136935003:AAELCf6tHB2IhYjVjGFnxkUfHO87BLqIrqU/sendMessage?chat_id=-1001857698694&text='.$user_id.'%20-%20Send_text='.$response->message;
+            $url = 'https://api.telegram.org/ЕЕЕЕЕЕЕ:ЕЕЕЕЕ/sendMessage?chat_id=-1001857698694&text='.$user_id.'%20-%20Send_text='.$response->message;
             $curl = curl_init();
             curl_setopt_array($curl, array(
                 CURLOPT_URL => $url,
